@@ -1,4 +1,17 @@
 body{
 background-color: black;
 color: white;
+font-family: 'RobotoRegular', sans-serif;
+font-size: 16px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 0;
+padding: 0;
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url(./fonts/Roboto-Regular.ttf); format: ('ttf');
 }
