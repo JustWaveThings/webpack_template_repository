@@ -17,6 +17,7 @@ module.exports = {
 		allowedHosts: ['.preview.csb.app', 'localhost'],
 		// .preview.csb.app is the domain for CodeSandbox.io
 		static: './dist',
+		port: 8887,
 	},
 	output: {
 		filename: '[name].bundle.js',
@@ -27,9 +28,12 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			title: 'What shows up in the browser tab',
 			template: './src/index.html',
-			//favicon: path.resolve(__dirname, './src/icons/favicon.ico'),
+			//favicon: path.resolve(__dirname, '../icons/favicon.ico'),
 		}),
-		new BundleAnalyzerPlugin(),
+		new BundleAnalyzerPlugin({
+			analyzerPort: 8989,
+			defaultSizes: 'stat',
+		}),
 		new DuplicatePackageCheckerPlugin(),
 		new ESLintPlugin(),
 		new CircularDependencyPlugin({
@@ -45,8 +49,13 @@ module.exports = {
 			// set the current working directory for displaying module paths
 			cwd: process.cwd(),
 		}),
-		new DashboardPlugin(),
+		new DashboardPlugin({
+			port: 8889,
+		}),
 	],
+	optimization: {
+		runtimeChunk: 'single',
+	},
 	module: {
 		rules: [
 			{

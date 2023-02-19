@@ -5,10 +5,10 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --progress",
-    "watch": "webpack --progress --watch",
-    "start": "webpack serve --open",
-    "startDash": "webpack-dashboard -- webpack serve --open",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dashboard -- webpack serve --open",
+    "dash": "",
     "gh-deploy": "git push origin && git subtree push --prefix dist origin gh-pages2",
     "gh-deploy-init": "git push origin && git subtree push --prefix dist origin gh-pages"
   },
