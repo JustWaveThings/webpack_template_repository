@@ -8,6 +8,7 @@
     "build": "webpack --progress",
     "watch": "webpack --progress --watch",
     "start": "webpack serve --open",
+    "startDash": "webpack-dashboard -- webpack serve --open",
     "gh-deploy": "git push origin && git subtree push --prefix dist origin gh-pages2",
     "gh-deploy-init": "git push origin && git subtree push --prefix dist origin gh-pages"
   },
