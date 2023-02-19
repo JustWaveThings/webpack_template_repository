@@ -17,7 +17,7 @@ module.exports = {
 		allowedHosts: ['.preview.csb.app', 'localhost'],
 		// .preview.csb.app is the domain for CodeSandbox.io
 		static: './dist',
-		port: 8887,
+		port: auto,
 	},
 	output: {
 		filename: '[name].bundle.js',
@@ -31,7 +31,7 @@ module.exports = {
 			//favicon: path.resolve(__dirname, '../icons/favicon.ico'),
 		}),
 		new BundleAnalyzerPlugin({
-			analyzerPort: 8989,
+			analyzerPort: auto,
 			defaultSizes: 'stat',
 		}),
 		new DuplicatePackageCheckerPlugin(),
@@ -50,7 +50,7 @@ module.exports = {
 			cwd: process.cwd(),
 		}),
 		new DashboardPlugin({
-			port: 8889,
+			port: auto,
 		}),
 	],
 	optimization: {
