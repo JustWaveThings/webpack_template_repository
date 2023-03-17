@@ -21,11 +21,16 @@
 	"bugs": {
 		"url": "https://github.com/JustWaveThings/webpack_template_repository/issues"
 	},
+	"browserslist": [
+		"defaults and supports es6-module",
+		"maintained node versions"
+	],
 	"homepage": "https://github.com/JustWaveThings/webpack_template_repository#readme",
 	"devDependencies": {
 		"@babel/core": "^7.21.3",
 		"@babel/preset-env": "^7.20.2",
 		"babel-loader": "^9.1.2",
+		"browserslist": "^4.21.5",
 		"eslint": "^8.34.0",
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-config-prettier": "^8.6.0",

@@ -1,0 +1,14 @@
+{
+    "presets": ["@babel/preset-env"]
+}
+
+
+/* The official presets are:
+
+@babel/preset-env
+@babel/preset-flow
+@babel/preset-react
+@babel/preset-typescript
+
+https://blog.jakoblind.no/babel-preset-env/
+ */
