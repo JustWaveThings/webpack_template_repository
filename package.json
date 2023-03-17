@@ -10,7 +10,6 @@
 		"start": "webpack serve --open",
 		"startDock": "webpack serve --progress --port 8080",
 		"deploy": "gh-pages -d dist"
-
 	},
 	"repository": {
 		"type": "git",
@@ -24,6 +23,9 @@
 	},
 	"homepage": "https://github.com/JustWaveThings/webpack_template_repository#readme",
 	"devDependencies": {
+		"@babel/core": "^7.21.3",
+		"@babel/preset-env": "^7.20.2",
+		"babel-loader": "^9.1.2",
 		"eslint": "^8.34.0",
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-config-prettier": "^8.6.0",
@@ -31,6 +33,7 @@
 		"eslint-webpack-plugin": "^4.0.0",
 		"gh-pages": "^5.0.0",
 		"source-map-loader": "^4.0.1",
+		"webpack": "^5.76.2",
 		"webpack-cli": "^5.0.1",
 		"webpack-dev-server": "^4.11.1"
 	},
@@ -40,7 +43,6 @@
 		"file-loader": "^6.2.0",
 		"html-webpack-plugin": "^5.5.0",
 		"style-loader": "^3.3.1",
-		"uuid": "^9.0.0",
-		"webpack": "^5.75.0"
+		"uuid": "^9.0.0"
 	}
 }
