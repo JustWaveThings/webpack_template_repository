@@ -47,6 +47,7 @@
 		"date-fns": "^2.29.3",
 		"file-loader": "^6.2.0",
 		"html-webpack-plugin": "^5.5.0",
+		"normalize.css": "^8.0.1",
 		"style-loader": "^3.3.1",
 		"uuid": "^9.0.0"
 	}
