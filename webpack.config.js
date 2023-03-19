@@ -1,9 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
+	target: 'web',
 	entry: {
 		index: './src/index.js',
 	},
@@ -12,6 +14,14 @@ module.exports = {
 		allowedHosts: ['.preview.csb.app', 'localhost'],
 		// .preview.csb.app is the domain for CodeSandbox.io
 		static: './dist',
+		client: {
+			progress: true,
+			reconnect: true,
+			overlay: {
+				warnings: false,
+				errors: false,
+			},
+		},
 	},
 	output: {
 		filename: '[name].bundle.js',
@@ -25,6 +35,7 @@ module.exports = {
 			//favicon: path.resolve(__dirname, '../icons/favicon.ico'),
 		}),
 		new ESLintPlugin(),
+		new StylelintPlugin({ fix: true, failOnError: false, failOnWarning: false }),
 	],
 	optimization: {
 		runtimeChunk: 'single',
@@ -54,10 +65,10 @@ module.exports = {
 				use: {
 					loader: 'babel-loader',
 					options: {
-					presets: [
-						['@babel/preset-env', { targets: "defaults" }]
-					]
-				}
+						presets: [
+							['@babel/preset-env', { targets: "defaults" }]
+						]
+					}
 				}
 			},
 		],

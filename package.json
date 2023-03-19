@@ -25,6 +25,9 @@
 		"defaults and supports es6-module",
 		"maintained node versions"
 	],
+	"stylelint": {
+		"extends": "stylelint-config-standard"
+	},
 	"homepage": "https://github.com/JustWaveThings/webpack_template_repository#readme",
 	"devDependencies": {
 		"@babel/core": "^7.21.3",
@@ -38,6 +41,9 @@
 		"eslint-webpack-plugin": "^4.0.0",
 		"gh-pages": "^5.0.0",
 		"source-map-loader": "^4.0.1",
+		"stylelint": "^15.3.0",
+		"stylelint-config-standard": "^31.0.0",
+		"stylelint-webpack-plugin": "^4.1.0",
 		"webpack": "^5.76.2",
 		"webpack-cli": "^5.0.1",
 		"webpack-dev-server": "^4.11.1"
