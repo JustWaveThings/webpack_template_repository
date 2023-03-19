@@ -32,7 +32,8 @@
 				"bierner.markdown-preview-github-styles",
 				"ritwickdey.LiveServer",
 				"christian-kohler.npm-intellisense",
-				"formulahendry.code-runner"
+				"formulahendry.code-runner",
+				"stylelint.vscode-stylelint"
 			]
 		}
 	}
