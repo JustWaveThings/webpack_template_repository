@@ -1,5 +1,6 @@
 
 
+
 @font-face {
 	font-family: RobotoRegular, Arial, Helvetica, sans-serif;
 	src: 'url(./fonts/Roboto-Regular.ttf)';
@@ -43,6 +44,8 @@ span {
 		yellow,
 		purple
 	);
+	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
+	
 }

@@ -35,7 +35,11 @@ module.exports = {
 			//favicon: path.resolve(__dirname, '../icons/favicon.ico'),
 		}),
 		new ESLintPlugin(),
-		new StylelintPlugin({ fix: false, failOnError: false, failOnWarning: false }),
+		new StylelintPlugin({
+			fix: false,
+			failOnError: false,
+			failOnWarning: false
+		}),
 	],
 	optimization: {
 		runtimeChunk: 'single',
