@@ -1,13 +1,14 @@
+
+
 @font-face {
-	font-family: 'RobotoRegular', Arial, Helvetica, sans-serif;
-	src: url(./fonts/Roboto-Regular.ttf);
-	format: ('ttf');
+	font-family: RobotoRegular, Arial, Helvetica, sans-serif;
+	src: 'url(./fonts/Roboto-Regular.ttf)';
 }
 
 body {
 	background-color: black;
-	color: rgba(209, 209, 209, 0.26);
-	font-family: 'RobotoRegular', sans-serif;
+	color: rgb(209 209 209 / 26%);
+	font-family: RobotoRegular, sans-serif;
 	font-size: 16px;
 	display: flex;
 	flex-direction: column;
@@ -16,6 +17,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100vh;
+
 }
 
 .container {
@@ -25,7 +27,7 @@ body {
 	align-items: center;
 	width: 50%;
 	height: 50vh;
-	border-color: rgba(240, 248, 255, 0.423);
+	border-color: rgb(240 248 255 / 42.3%);
 	border-style: solid;
 	font-size: 3rem;
 	font-weight: 700;
@@ -42,6 +44,5 @@ span {
 		purple
 	);
 	background-clip: text;
-	-webkit-background-clip: text;
 	color: transparent;
 }
