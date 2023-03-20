@@ -33,7 +33,8 @@
 				"ritwickdey.LiveServer",
 				"christian-kohler.npm-intellisense",
 				"formulahendry.code-runner",
-				"stylelint.vscode-stylelint"
+				"stylelint.vscode-stylelint",
+				"ohansemmanuel.css-grid-snippets"
 			]
 		}
 	}
